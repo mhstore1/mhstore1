@@ -283,6 +283,7 @@ h2:after {
 }
 
 .add-to-cart-btn {
+  width: 180px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -898,6 +899,7 @@ footer .developer a:hover {
 }
 
 .checkout-content {
+  
   background: linear-gradient(145deg, #2c2c2c, #242424);
   padding: 30px;
   border-radius: 15px;
@@ -919,7 +921,6 @@ footer .developer a:hover {
   color: gold;
   font-size: 1.5rem;
 }
-
 /* القائمة المنبثقة للهواتف */
 .mobile-menu {
   display: none;
@@ -1066,15 +1067,11 @@ footer .developer a:hover {
     width: 100%;
   }
 
-  .add-to-cart-btn span {
-    display: none;
-  }
+  
 
   .add-to-cart-btn {
     padding: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 180px;
     justify-content: center;
   }
 }
@@ -1122,6 +1119,9 @@ footer .developer a:hover {
   #product .card {
     width: 100%;
   }
+  .add-to-cart-btn span {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1143,15 +1143,4 @@ footer .developer a:hover {
     height: 50px;
   }
 
-  .add-to-cart-btn span {
-    display: none;
-  }
-
-  .add-to-cart-btn {
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    justify-content: center;
-  }
 }
