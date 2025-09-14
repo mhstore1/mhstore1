@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH STORE - متجر الساعات والإكسسوارات الفاخرة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="scrollTopBtn" title="الرجوع للأعلى"><i class="fas fa-arrow-up"></i></button>
+    
+    <!-- شريط التنقل -->
+    <div class="navbar">
+        <a href="index.html" class="logo">M<span>H STORE</span></a>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#product">المنتجات</a></li>
+            <li><a href="#about">عنا</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <div class="burger-menu" id="burgerMenu">
+                <i class="fas fa-bars" id="burgerIcon"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- القائمة المنبثقة للهواتف -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#product">المنتجات</a></li>
+            <li><a href="#about">عنا</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </div>
+    
+    <!-- قسم الرئيسية -->
+    <section id="home">
+        <div class="content">
+            <h1>مرحبا بكم في متجرنا</h1>
+            <p>
+                MH STORE هنا حيث ستجد كل ما تبحث عنه من ساعات فاخرة وحقائب أنيقة وغيرها من
+                الاكسسوارات عالية الجودة. ما عليك سوى الطلب وسيصلك المنتج الذي اخترته في أسرع وقت
+                ممكن في جميع انحاء مدينة الدار البيضاء.
+            </p>
+            <a href="#product" class="cta-button">تصفح المنتجات</a>
+        </div>
+    </section>
+    
+    <!-- قسم المنتجات -->
+    <h2>المنتجات</h2>
+    <section id="product">
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img1.jpeg" alt="ساعة رجالية أنيقة" />
+            </div>
+            <h3>Tissot PRX </h3>
+             <p>ساعة Tissot PRX أنيقة وعملية، تصميم كلاسيكي مع صناعة سويسرية عالية الجودة.</p>
+            <div class="price">170 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة رجالية كلاسيكية', 250, 'img/img1.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img2.jpeg" alt="ساعة رياضية" />
+            </div>
+            <h3> G-SHOCK </h3>
+            <p>G-SHOCK CASIO (شفافة/سوداء)  
+ستايل عصري وكاجوال، كتجمع بين الأناقة والصلابة  </p>
+            <div class="price">130 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة رياضية متعددة الوظائف', 300, 'img/img2.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img3.jpeg" alt="ساعة نسائية" />
+            </div>
+            <h3> G-SHOCK </h3>
+            <p>G-SHOCK CASIO (رمادية بعدة ألوان)  
+ساعة سبور وعملية، نسخة طبق الأصل من G-SHOCK  </p>
+            <div class="price">130 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة نسائية فاخرة', 280, 'img/img3.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img4.jpeg" alt="ساعة ذكية" />
+            </div>
+            <h3> G-SHOCK </h3>
+            <p>G-SHOCK CASIO 
+ساعة سبور وعملية، نسخة طبق الأصل من G-SHOCK  </p>
+            <div class="price">130 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة ذكية حديثة', 450, 'img/img4.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img5.jpeg" alt="ساعة فاخرة" />
+            </div>
+            <h3>Rolex sumbariner</h3>
+           <p>ساعة بتصميم أنيق وعصري تناسب الرجال في جميع المناسبات</p>
+            <div class="price">130 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة فاخرة محدودة الإصدار', 600, 'img/img5.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img6.jpeg" alt="ساعة كلاسيكية" />
+            </div>
+            <h3>Rolex sumbariner</h3>
+            <p>ساعة بتصميم أنيق وعصري تناسب الرجال في جميع المناسبات</p>
+            <div class="price">130 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة كلاسيكية فاخرة', 350, 'img/img6.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img7.jpeg" alt="ساعة رياضية حديثة" />
+            </div>
+            <h3>Rolex sumbariner</h3>
+            <p>ساعة بتصميم أنيق وعصري تناسب الرجال في جميع المناسبات</p>
+            <div class="price">130 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة رياضية حديثة', 400, 'img/img7.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="image-container">
+                <img src="img/img8.jpeg" alt="ساعة أنيقة" />
+            </div>
+            <h3>Rolex sumbariner</h3>
+            <p>ساعة بتصميم أنيق وعصري تناسب الرجال في جميع المناسبات</p>
+            <div class="price">130 د.م</div>
+            <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart('ساعة أنيقة للرجال', 320, 'img/img8.jpg')">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>إضافة إلى السلة</span>
+                </button>
+                <button class="wishlist" onclick="toggleWishlist(this)">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم عنا -->
+    <h2>عنا</h2>
+    <section id="about">
+        <div class="content2">
+            <h1>M<span>H STORE</span></h1>
+            <p>
+                MH STORE هو متجر متخصص في بيع الساعات والإكسسوارات بجودة عالية وأسعار مناسبة. 
+                نقدم لكم أحدث الموديلات والعروض مع ضمان الجودة والخدمة السريعة.
+            </p>
+            <p>
+                نسعى دائمًا لتلبية احتياجات عملائنا الكرام وتقديم أفضل المنتجات بأعلى معايير الجودة.
+                نفتخر بثقة عملائنا التي كسبناها على مر السنين من خلال الالتزام بالجودة والموثوقية.
+            </p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>توصيل سريع لكل أنحاء الدار البيضاء</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>ضمان الجودة والمنشأ</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <span>خدمة عملاء على مدار الساعة</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-undo"></i>
+                    <span>إمكانية الاسترجاع خلال 7 أيام</span>
+                </div>
+            </div>
+        </div>
+        <div class="gallary">
+            <div class="main">
+                <img src="img/img1.jpeg" name="main" alt="صورة المتجر" />
+            </div>
+            <div class="photos">
+                <img onmouseenter="main.src = this.src" src="img/img1.jpeg" alt="صورة 1" />
+                <img onmouseenter="main.src = this.src" src="img/img2.jpeg" alt="صورة 2" />
+                <img onmouseenter="main.src = this.src" src="img/img3.jpeg" alt="صورة 3" />
+                <img onmouseenter="main.src = this.src" src="img/img4.jpeg" alt="صورة 4" />
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الاتصال -->
+    <h2>اتصل بنا</h2>
+    <section id="contact">
+        <div class="content3">
+            <h3>يمكنك التواصل معنا عن طريق :</h3>
+            <p><i class="fas fa-phone"></i> رقم الهاتف: 0712825177</p>
+            <p><i class="fas fa-envelope"></i> الايميل: info@mhstore.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> العنوان: الدار البيضاء، المغرب</p>
+            <p><i class="fab fa-whatsapp"></i> واتساب: 0712825177</p>
+        </div>
+        <div class="form">
+            <h3>أرسل لنا رسالة</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" id="name" placeholder="أدخل اسمك الكامل" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" placeholder="أدخل رقم هاتفك" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" placeholder="اكتب رسالتك هنا" required></textarea>
+                </div>
+                <button type="submit">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- الفوتر -->
+    <footer>
+        <h3>&copy; 2023 جميع الحقوق محفوظة <span>MH STORE</span></h3>
+        <div class="developer">
+            تم صنع الموقع من طرف <a href="tel:+2120712825177">يعقوب العودي</a> - الهاتف: <a href="tel:+2120712825177">0712825177</a>
+        </div>
+    </footer>
+    
+    <!-- نافذة سلة التسوق -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>سلة التسوق</h3>
+                <button class="close-modal" onclick="closeCartModal()">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- سيتم إضافة العناصر هنا عبر JavaScript -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>سلة التسوق فارغة</p>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <h4>المجموع:</h4>
+                    <p id="cartTotal">0 د.م</p>
+                </div>
+                <div class="cart-buttons">
+                    <button class="cart-btn continue-shopping" onclick="closeCartModal()">مواصلة التسوق</button>
+                    <button class="cart-btn checkout" onclick="openCheckoutModal()">إتمام الطلب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- نافذة تأكيد الطلب -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h3>إتمام الطلب</h3>
+                <button class="close-modal" onclick="closeCheckoutModal()">&times;</button>
+            </div>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="customerName">الاسم الكامل</label>
+                    <input type="text" id="customerName" placeholder="أدخل اسمك الكامل" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerPhone">رقم الهاتف</label>
+                    <input type="tel" id="customerPhone" placeholder="أدخل رقم هاتفك" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerAddress">العنوان بالتفصيل</label>
+                    <input type="text" id="customerAddress" placeholder="أدخل عنوانك بالتفصيل" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerNotes">ملاحظات إضافية (اختياري)</label>
+                    <textarea id="customerNotes" placeholder="أضف أي ملاحظات خاصة بالطلب"></textarea>
+                </div>
+                
+                <button type="submit">إرسال الطلب عبر الواتساب</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
