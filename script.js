@@ -253,7 +253,7 @@
 الرسالة: ${message}
             `.trim();
             
-            const whatsappURL = `https://wa.me/212712825177?text=${encodeURIComponent(fullMessage)}`;
+            const whatsappURL = `https://wa.me/212637040284?text=${encodeURIComponent(fullMessage)}`;
             window.open(whatsappURL, '_blank');
             
             // تفريغ الحقول
