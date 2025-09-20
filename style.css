@@ -110,8 +110,7 @@ body {
   width: 100%;
   height: 100vh;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-url(img/hero.jpg)
-  center/cover no-repeat;
+    url(img/hero.jpg) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,13 +276,15 @@ h2:after {
 
 .card-actions {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-top: 15px;
 }
 
 .add-to-cart-btn {
-  width: 180px;
+  justify-content: center;
+  width: 90%;
+  height: 50px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -302,33 +303,6 @@ h2:after {
   color: gold;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(255, 217, 0, 0.3);
-}
-
-.wishlist {
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  color: #ccc;
-  border: 2px solid #ccc;
-}
-
-.wishlist.active {
-  color: #ff4d4d;
-  border-color: #ff4d4d;
-}
-
-.wishlist:hover {
-  color: #ff4d4d;
-  border-color: #ff4d4d;
-  transform: translateY(-3px);
 }
 
 /* تحسين قسم عنا بشكل كبير */
@@ -899,7 +873,6 @@ footer .developer a:hover {
 }
 
 .checkout-content {
-  
   background: linear-gradient(145deg, #2c2c2c, #242424);
   padding: 30px;
   border-radius: 15px;
@@ -920,6 +893,41 @@ footer .developer a:hover {
 .checkout-header h3 {
   color: gold;
   font-size: 1.5rem;
+}
+#checkoutForm .form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#checkoutForm input,
+#checkoutForm textarea {
+  padding: 10px;
+  color: white;
+  width: 90%;
+  background-color: #485748;
+  height: 60px;
+  border: none;
+  outline: none;
+  margin: 4px 0;
+  border-radius: 10px;
+}
+#checkoutForm textarea {
+  height: 100px;
+  width: 100%;
+}
+#checkoutForm button {
+  color: white;
+  width: 200px;
+  background-color: #09fc09d2;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#checkoutForm button:hover{
+  background-color: #09fc09;
 }
 /* القائمة المنبثقة للهواتف */
 .mobile-menu {
@@ -1067,11 +1075,9 @@ footer .developer a:hover {
     width: 100%;
   }
 
-  
-
   .add-to-cart-btn {
     padding: 10px;
-    width: 180px;
+    width: 90%;
     justify-content: center;
   }
 }
@@ -1142,5 +1148,4 @@ footer .developer a:hover {
     width: 50px;
     height: 50px;
   }
-
 }

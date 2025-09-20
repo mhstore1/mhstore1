@@ -16,12 +16,7 @@
                 behavior: 'smooth'
             });
         });
-        
-        // تفعيل زر القلب
-        function toggleWishlist(button) {
-            button.classList.toggle('active');
-        }
-        
+    
         // إدارة القائمة المنبثقة للهواتف
         const burgerMenu = document.getElementById('burgerMenu');
         const burgerIcon = document.getElementById('burgerIcon');
@@ -259,5 +254,5 @@
             // تفريغ الحقول
             this.reset();
             
-            alert('شكراً لتواصلكم، سيتم فتح الواتساب لإرسال رسالتكم');
+             alert("شكراً لتواصلكم، سيتم فتح الواتساب للرد عليكم في اسرع وقت ");
         });
